@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: rgb(14, 70, 111);
+  color: rgb(248, 252, 255);
+  font-family: 'Ubuntu', sans-serif;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  text-align: center;
+  margin-bottom: auto;
+  align-items: center;
+  padding: 20px;
+}
+
+footer {
+  padding: 20px;
+  margin-top: auto;
+}
+
+.gora {
+  display: flex;
+  justify-content: space-around;
+  margin-top: auto;
+}
+
+.dol {
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+  margin-top: auto;
+}
+
+.smartfon-1, .smartfon-2, .smartfon-3, .smartfon-4 {
+  width: 510px;
+  height: 220px;
+  padding: 21px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border: double 2px black;
+  background-color: rgb(62, 61, 61);
+  box-shadow: 8px 8px rgb(108, 108, 108);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a {
+  color: rgb(248, 252, 255);
+  width: 450px;
+  padding: 10px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 24px;
+  padding: 10px;
+  max-width: 372px;
+}
+
+img {
+  border-radius: 8px;
+  max-width: 43vw;
+}
+
+@media screen and (max-width: 1280px) {
+  .smartfon-1, .smartfon-2, .smartfon-3, .smartfon-4 {
+    max-width: 510px;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 520px){
+  .smartfon-1, .smartfon-2, .smartfon-3, .smartfon-4 {
+    max-width: 98vw;
+  }
+
+  .gora {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dol {
+    flex-direction: column;
+    align-items: center;
+  }
+}
